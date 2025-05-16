@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>schoenstatt 3.0mini</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ewert&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+<!-- offline pop up -->
+  <div id="offline-popup" class="offline-popup hidden">
+  <p>You are currently offline. Please check your internet connection.</p>
+</div>
+
+  <!-- header starts -->
+  <header>
+    <div id="header" style="display: none;">
+      <span id="greeting"></span>, <span id="nickname" style="cursor: pointer;"></span>
+      <i class="fa-solid fa-user "></i>
+    </div>
+  </header>
+  <hr>
+  <!-- header ends -->
+    <!-- input for getting user nickname -->
+  <input type="text" id="nicknameInput" placeholder="Enter your nickname max" style="display: none;" />
+<!-- skeleton loader -->
+
+<!-- <div id="content">
+  <div class="skeleton-card">
+    <div class="skeleton-image"></div>
+    <div class="skeleton-text"></div>
+    <div class="skeleton-text short"></div>
+  </div>
+</div> -->
+  <section id="Home" data-label="Home">
+
+
+
+ 
+<!-- main content starts -->
+  <main>
+
+    <!-- feed fetch post starts -->
+    <div class="feed">
+      <div class="feed-head">
+        <h1>feeds</h1>
+        <h1>features</h1>
+      </div>
+      <div class="feeds-fetch">
+
+        <div class="feeds-posts">
+          <img src="https://i.postimg.cc/13dJRqhM/Screenshot-20240903-073054.jpg" alt="post image" />
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti repellat consequatur similique blanditiis dolore quod molestiae dicta deserunt tenetur, assumenda est sunt iste aspernatur id velit sed, fugiat ipsum!</p>
+        </div>
+        <div class="feeds-posts">
+          <img src="https://i.postimg.cc/13dJRqhM/Screenshot-20240903-073054.jpg" alt="post image" />
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti repellat consequatur similique blanditiis dolore quod molestiae dicta deserunt tenetur, assumenda est sunt iste aspernatur id velit sed, fugiat ipsum!</p>
+        </div>
+        <div class="feeds-posts">
+          <img src="https://i.postimg.cc/13dJRqhM/Screenshot-20240903-073054.jpg" alt="post image" />
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti repellat consequatur similique blanditiis dolore quod molestiae dicta deserunt tenetur, assumenda est sunt iste aspernatur id velit sed, fugiat ipsum!</p>
+        </div>
+        <div class="feeds-posts">
+          <img src="https://i.postimg.cc/13dJRqhM/Screenshot-20240903-073054.jpg" alt="post image" />
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deleniti repellat consequatur similique blanditiis dolore quod molestiae dicta deserunt tenetur, assumenda est sunt iste aspernatur id velit sed, fugiat ipsum!</p>
+        </div>
+      </div>
+    </div>
+        
+    <!-- feed fetch post ends -->
+
+
+  </main>
+  <!-- main content ends -->
+
+  </section>
+  
+  <!-- tv section begins  -->
+  <section id="TV">
+  
+  </section>
+  <!-- tv section ends -->
+
+  <!-- calender section -->
+  <section id="Calendar">
+
+    <main>
+
+      <div class="calender-header">
+        <h1 class="calenderH1">calendar of the day</h1>
+        <div class="calender-head">
+            
+          <div class="calender-details">
+            <h2 id="Day"></h2>
+            <h1 id="date"></h1>
+            <p id="month"></p>
+          </div>
+          <div class="calender-colorDay">
+            <h3 id="ColorOfTheDay"></h3>
+            <p id="time">
+              08:00
+            </p>
+          </div>
+
+        </div>
+        <center>
+          <hr class="calenderHeadHr">
+        </center>
+        
+        <center>
+          <div class="saint">
+          <h1>saint of the day</h1>
+          <p id="saintOfTheDay">
+           
+          </p>
+        </div>
+        </center>
+
+        <center>
+           <div class="season">
+            <div class="season1">
+               <h1 id="season">season:</h1>
+          <p id="seasonOfTheDay">
+            
+          </p>
+            </div>
+         
+          <div class="rosary">
+            <h1 id="rosary"></h1>
+            <p id="rosaryOfTheDay">
+              
+            </p>
+          </div>
+        </div>
+        </center>
+         
+  
+        
+      </div>
+
+    </main>
+
+  </section>
+
+  <section id="News" data-label="News">
+   
+  </section>
+ <footer>
+  <nav>
+    <div class="nav-item">
+      <a href="#" data-label="Home"><i class="fa-solid fa-house"></i><span class="label">Home</span></a>
+    </div>
+    <div class="nav-item">
+      <a href="#" data-label="TV"><i class="fa-solid fa-tv"></i><span class="label">TV</span></a>
+    </div>
+    <div class="nav-item">
+      <a href="#" data-label="Calendar"><i class="fa-solid fa-calendar"></i><span class="label">Calendar</span></a>
+    </div>
+    <div class="nav-item">
+      <a href="#" data-label="News"><i class="fa-solid fa-newspaper"></i><span class="label">News</span></a>
+    </div>
+  </nav>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

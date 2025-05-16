@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src='https://8x8.vc/vpaas-magic-cookie-c863358945b6489389c59b2c0b533b55/external_api.js' async></script>
+    <style>html, body, #jaas-container { height: 100%; }</style>
+    <script type="text/javascript">
+      window.onload = () => {
+        const api = new JitsiMeetExternalAPI("8x8.vc", {
+          roomName: "vpaas-magic-cookie-c863358945b6489389c59b2c0b533b55/Schoenstattpodcast",
+          configOverwrite: {
+            startWithAudioMuted: true, // If you want to mute the microphone at the start
+            startWithVideoMuted: true, // Mute video at the start (if applicable)
+            prejoinPageEnabled: false, // Optional: disable the pre-join page
+            defaultLanguage: 'en', // Set default language for the interface
+          },
+          parentNode: document.querySelector('#jaas-container'),
+                        // Make sure to include a JWT if you intend to record,
+                        // make outbound calls or use any other premium features!
+                        // jwt: "eyJraWQiOiJ2cGFhcy1tYWdpYy1jb29raWUtYzg2MzM1ODk0NWI2NDg5Mzg5YzU5YjJjMGI1MzNiNTUvMmMwYmVhLVNBTVBMRV9BUFAiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJqaXRzaSIsImlzcyI6ImNoYXQiLCJpYXQiOjE3NDY2NzI0MTgsImV4cCI6MTc0NjY3OTYxOCwibmJmIjoxNzQ2NjcyNDEzLCJzdWIiOiJ2cGFhcy1tYWdpYy1jb29raWUtYzg2MzM1ODk0NWI2NDg5Mzg5YzU5YjJjMGI1MzNiNTUiLCJjb250ZXh0Ijp7ImZlYXR1cmVzIjp7ImxpdmVzdHJlYW1pbmciOmZhbHNlLCJvdXRib3VuZC1jYWxsIjpmYWxzZSwic2lwLW91dGJvdW5kLWNhbGwiOmZhbHNlLCJ0cmFuc2NyaXB0aW9uIjpmYWxzZSwicmVjb3JkaW5nIjpmYWxzZX0sInVzZXIiOnsiaGlkZGVuLWZyb20tcmVjb3JkZXIiOmZhbHNlLCJtb2RlcmF0b3IiOnRydWUsIm5hbWUiOiJUZXN0IFVzZXIiLCJpZCI6Imdvb2dsZS1vYXV0aDJ8MTA1NzQzMzY1OTkzNDkwNzQ2NDY2IiwiYXZhdGFyIjoiIiwiZW1haWwiOiJ0ZXN0LnVzZXJAY29tcGFueS5jb20ifX0sInJvb20iOiIqIn0.cg5OlG2mgtKgRAPYIPF65gwrhgb3hTocyt9UMAeD5Cg7-bCx_IdSqR4dI4moHQ3xS_OHwuLXeRUn0u7Rfbgb7P3pjgPfkKvbezEfips85Qpapj8AFT-QjGP3vv6JAMRml-SPsMOV6WjVODwqfBugSRYso0ekAh3N_V7Yroio8iV7cv6AyTEyQ0ifP8ch_gL0kXJEEMYB-j6zdO_q0Ta-99KCvy00s_qYFnkzjtVBTcnxUuawXHdetw2l35LQj7KyVR9WkQcCIT9UAdmT8wwhTn9agpxMWeYfFR6LvMhQeX8p-ZF80uIG9CyyngV06Da42VczCp7UuoB_Z0khILhzTw"
+        });
+      }
+    </script>
+  </head>
+  <body><div id="jaas-container" /></body>
+</html>
