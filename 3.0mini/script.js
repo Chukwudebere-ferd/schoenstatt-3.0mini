@@ -142,7 +142,7 @@ const color =  document.getElementById('ColorOfTheDay');
 const saint = document.getElementById('saintOfTheDay');
 const season = document.getElementById('season');
 
-fetch('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today')
+fetch('api url')
 .then(res => res.json())
 .then(data => {
   console.log(data);
@@ -160,7 +160,7 @@ fetch('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-en/today')
 // roasry 
 const roasry = document.getElementById('rosary');
 
-fetch('https://the-rosary-api.vercel.app/v1/monday')
+fetch('api url')
 .then(res => res.json())
 .then(data => {
   console.log(data);
