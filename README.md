@@ -1,0 +1,1 @@
+# schoenstatt-3.0mini
